@@ -21,8 +21,10 @@ int main(){
     close(exitPipe[1]);
 
     //初始化MYSQL
+    /*
     MYSQL *conn;
     SQL_Connect(&conn);
+     */
     int workNum=atoi(argv[3]);
 
     //初始化线程池
