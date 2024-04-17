@@ -6,7 +6,6 @@
 
 int main(){
     //初始化
-    BEGIN:
     char* argv[]={"0","192.168.0.103","58888"};
     int sockFd = socket(AF_INET,SOCK_STREAM,0);//取得socket
     //初始化TCP链接
@@ -20,6 +19,7 @@ int main(){
     system("clear");
     puts("Connection success.");
     puts("\033[33mWelcome to ZeDisk! \033[0m\nPlease select one option.");
+BEGIN:
     puts("[1] Upload\n[2] Download\n[3] exit");
     char opt;
     scanf("%c",&opt);
