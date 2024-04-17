@@ -9,7 +9,7 @@ void sigFunc(int signum){
 //int main(int argc, char*argv[]){
     //ArgsCheck(argc,4);
 int main(){
-    char*argv[]={"0","192.168.0.103","58888","4"};
+    char*argv[]={"0","172.16.0.3","58888","4"};
     pipe(exitPipe);
     // 初始化退出管道
     if(fork()!=0){

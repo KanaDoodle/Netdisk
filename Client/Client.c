@@ -6,7 +6,7 @@
 
 int main(){
     //初始化
-    char* argv[]={"0","192.168.0.103","58888"};
+    char* argv[]={"0","172.16.0.3","58888"};
     int sockFd = socket(AF_INET,SOCK_STREAM,0);//取得socket
     //初始化TCP链接
     struct sockaddr_in addr;
